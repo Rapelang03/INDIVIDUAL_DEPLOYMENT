@@ -1,4 +1,5 @@
 services:
+  # Backend API Service
   - name: sql-backend
     type: web
     env: node
@@ -18,7 +19,9 @@ services:
         value: wings_cafe
       - key: DB_PORT
         value: 3306
+
 databases:
+  # MySQL Database
   - name: sql-database
     type: mysql
     plan: free
